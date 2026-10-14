@@ -5,6 +5,7 @@
 		<meta charet="UTF-8">
 		<link rel="stylesheet" href="css/style_paper.css">
 		<link rel="icon" type="image/x-icon" href="slike/favicon.jpg">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	</head>
 	<body>
 		<div class="logo">
@@ -28,16 +29,24 @@
 				<br>
 
 				<div class="vnos">
-					<span>👤</span>
-					<input type="text" placeholder="Username">
+				    <span>👤</span>
+				    <input type="text" id="username" placeholder="Username">
 				</div>
+				
 				<div class="vnos">
-					<span>🔒</span>
-					<input type="password" placeholder="Password">
+				    <span>🔒</span>
+				    <input type="password" id="password" placeholder="Password">
 				</div>
-				<a class="problem" href="https://www.interactivebrokers.ie/credential.recovery/login-help" target="blanc">Problem with logging in?</a>
+				
+				<a class="problem"
+				   href="https://www.interactivebrokers.ie/credential.recovery/login-help"
+				   target="_blank">
+				    Problem with logging in?
+				</a>
+				
 				<br>
-				<button>Simulated Login</button>
+				
+				<button type="button" onclick="login()">Login</button>
 			<form>
 			<br><br>
 			<p class="acc">Don't have an account?<a href="https://www.interactivebrokers.ie/Universal/Application?ft=T" target="blanc"> Try the free trial</a>
@@ -85,5 +94,27 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			function login() {
+			    const username = document.getElementById("username").value.trim();
+			    const password = document.getElementById("password").value.trim();
+			
+			    if (username === "" || password === "") {
+			        Swal.fire({
+			            title: "Vnesi podatke",
+			            text: "Vnesi uporabniško ime in geslo.",
+			            icon: "warning",
+			            confirmButtonText: "V redu"
+			        });
+			    } else {
+			        Swal.fire({
+			            title: "Uspešna prijava",
+			            text: "Vnosna polja so izpolnjena.",
+			            icon: "success",
+			            confirmButtonText: "V redu"
+			        });
+			    }
+			}
+		</script>
 	</body>
 </html>
