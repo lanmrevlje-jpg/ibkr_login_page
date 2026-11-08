@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>application</title>
+    <link rel="stylesheet" href="css/styleapp.css">
+	<link rel="icon" type="image/x-icon" href="slike/favicon.jpg">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="slike/Interactive_Brokers_Logo.webp" height="40">
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="left-section">
+
+            <h1>Start a Free Trial</h1>
+
+            <div class="steps">
+                <div class="step">
+                    <span class="number">1</span>
+                    <p>Sign up with your email address</p>
+                </div>
+
+                <div class="step">
+                    <span class="number">2</span>
+                    <p>Get USD 1,000,000 in a simulated trading account</p>
+                </div>
+
+                <div class="step">
+                    <span class="number">3</span>
+                    <p>Learn our tools and services</p>
+                </div>
+            </div>
+
+            <p class="description">
+                You can use your Free Trial account with all of our
+                trading platforms including:
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <span>✓</span>
+                    <p>Desktop TWS, our full-featured flagship trading platform.</p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p>IBKR Mobile for iOS and Android, so you can trade on-the-go.</p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p>Client Portal, our web-based account management and simplified trading app.</p>
+                </div>
+            </div>
+
+            <div class="links">
+                <p>
+                    Do you want to continue a previously started application?
+                    <a href="#">Click Here ↗</a>
+                </p>
+
+                <p>
+                    Are you an IBKR Client looking to open an additional account?
+                    <a href="#">Click Here ↗</a>
+                </p>
+            </div>
+
+        </section>
+
+        <section class="right-section">
+
+            <div class="warning">
+                <span class="warning-icon">!</span>
+                <p>
+                    There will be scheduled maintenance on
+                    <strong>Sunday, November 8th</strong>, from approximately
+                    <strong>18:00 ET to 18:30 ET.</strong>
+                    During this maintenance window, some functionality
+                    including Client Portal may be intermittently unavailable.
+                </p>
+            </div>
+
+            <h2>Create a Username and<br> Password</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Required" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Required" required>
+                </div>
+
+                <div class="form-group">
+                    <div class="password-label">
+                        <label for="password">Password</label>
+                        <a href="#" onclick="togglePassword(event)">◉ Show password</a>
+                    </div>
+
+                    <input type="password" id="password" placeholder="Required" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option>Slovenia</option>
+                        <option>Austria</option>
+                        <option>Croatia</option>
+                        <option>Germany</option>
+                        <option>Italy</option>
+                    </select>
+                </div>
+
+                <hr>
+
+                <h2 class="marketing-title">
+                    Marketing Preferences <span>ⓘ</span>
+                </h2>
+
+                <p class="marketing-description">
+                    Do you want to be contacted by Interactive Brokers
+                    about features, products and offers?
+                </p>
+
+                <div class="radio-options">
+                    <label>
+                        <input type="radio" name="marketing" value="yes">
+                        Yes
+                    </label>
+
+                    <label>
+                        <input type="radio" name="marketing" value="no">
+                        No
+                    </label>
+                </div>
+
+                <button type="submit">Start Free Trial</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
